@@ -62,7 +62,7 @@ public class NewsSourceDetailActivity
   }
 
   private void subscribeToLiveData() {
-    mNewsSourceDetailViewModel.getMutableLiveData().observe(this,
+    mNewsSourceDetailViewModel.getMutableLiveData().observe(null,
         sources -> {
           mNewsSourceDetailViewModel.getObservableArrayList().addAll(sources);
           mNewsSourceDetailAdapter.notifyDataSetChanged();
