@@ -1,7 +1,10 @@
 language: android
 jdk: oraclejdk8
 sudo: false
-
+licenses:
+    - 'android-sdk-preview-license-.+'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
 android:
   components:
     - platform-tools
